@@ -1,0 +1,33 @@
+1. Create route for '/email' with controller - Done
+2. Create the Email model with validations
+	- All fields presence validation - Done
+	- Email address format validator - Done / Write tests ?
+	- Format the body text - Done / Test ? 
+3. Create the service configuration for mailgun and sendgrid
+	- Create yaml config - Done
+	- Create MailingServicesFactory - Not done
+	- Read config - Done
+4. Create Mailgun service - Tests? 
+	- Accept the Email object and format it to mailgun format
+	- ingetrate with Mailgun api
+	- Error handling when sending email fails
+	- Service timeout - ?
+	- Log errors -?
+5. Create Sendgrid service - Tests?
+	- Accept the Email object and format it to sendgrid format
+	- ingetrate with Sendgrid api
+	- Error handling when sending email fails
+	- Service timeout
+	- Log errors
+6. Error Handling - Done / Tests?
+	- When primary service fails use secondary
+	- When both fail
+7. Response Handling - Done / Tests?
+	- Success response
+	- Error response
+
+
+	{ "id": "<20170721135302.93226.5D08D3920996EC76@sandboxc66addaf2caf43bba3aaff7a5f3f7ab0.mailgun.org>", "message": "Queued. Thank you." }
+
+	sendgrid
+		@key = "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"
