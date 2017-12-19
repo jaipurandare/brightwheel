@@ -1,11 +1,11 @@
 defaults: &defaults
   mailgun:
-    apiKey: "key-2859269751e7cd31c052f17a24824311"
-    url: "https://api:<key>@api.mailgun.net/v3/<domain>/messages"
-    domain: "sandboxc66addaf2caf43bba3aaff7a5f3f7ab0.mailgun.org"
+    apiKey: "needs to come from env variable"
+    url: ""
+    domain: ""
   sendgrid:
-    apiKey: "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"
-    url: "https://api.sendgrid.com/v3/mail/send"
+    apiKey: ""
+    url: ""
   primary: sendgrid
 
 development:
